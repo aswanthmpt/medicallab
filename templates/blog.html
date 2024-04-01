@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>Blog</h2>
+						<p>Unlocking genomics to reshape personalized healthcare, <br>revolutionizing outcomes.</p>
+					</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner-01.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<section class="healthpackage">
+    <div class=" container">
+        <div class="row">
+            {% for i in blogs %}
+            <div class="col-lg-4  col-md-4 col-sm-6">
+                <a href="{% url 'main:blogdetails' i.id %}" class="healthpack">
+                    <span>
+                        <div class="card healthcard">
+                            <div class="link ">
+                              
+                                <i class='bx bx-link'></i>
+                                <img src="{{i.image.url}}" alt="Pathology" />
+                            </div>
+                            <div class="card-body healthcardbody">
+                               <div class="font">
+
+                                   <h6>{{i.h1}}</h6>
+                               </div>
+                              
+                            </div>
+                        </div>
+    
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+
+            
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+                        <h2>Blog</h2>
+                        <p>Unlocking genomics to reshape personalized healthcare, <br>revolutionizing outcomes.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static '/images/banner-01.jpg' %}" class="attachment-large size-large"
+                alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">
+        </div>
+    </div>
+</div>
+
+<section class="healthpackage">
+    <div class=" container">
+        <div class="row">
+            <div class="col-lg-8 ">
+                <h2 class="blog-heading">{{blogs.h1}}</h2>
+                <h6 class="blog-date">{{blogs.date}}</h6>
+
+                <p>{{blogs.p1}}</p>
+                <h3 class="wp-block-heading">{{blogs.h2}}</h3>
+                <p>{{blogs.p2}}</p>
+                <h3 class="wp-block-heading">{{blogs.h3}}</h3>
+                <p>{{blogs.p3}}</p>
+                <h3 class="wp-block-heading">{{blogs.h4}}</h3>
+                <p>{{blogs.p4}}</p>
+                <h3 class="wp-block-heading">{{blogs.h5}}</h3>
+                <p>{{blogs.p5}}</p>
+                <h3 class="wp-block-heading">{{blogs.h6}}</h3>
+                <p>{{blogs.p6}}</p>
+                <h3 class="wp-block-heading">{{blogs.h7}}</h3>
+                <p>{{blogs.p7}}</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-sidebar">
+                    <span>
+                        <img width="600" height="300" src="{{blogs.image.url}}">
+                    </span>
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><i class="fa fa-check"></i>
+                            {{blogs.r1}}</li>
+                        <li><i class="fa fa-check"></i>
+                            {{blogs.r2}}</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

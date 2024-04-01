@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>{{branches.name}}</h2>
+						
+					</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner-01.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Phone</h4>
+                    <h6>+91 81388 62626</h6>
+                    <h6>0484 0000 0000</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Email</h4>
+                    <h6> info@gmrllabs.com</h6>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bxs-map'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Address</h4>
+                    <h6>{{branches.address}}</h6>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bx-time-five'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Opening Hours</h4>
+                    <h6>Mon - Sat : 6:30pm to 6:00pm <br>
+                    Sun : 6:30am - 12:30pm</h6>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+</div>
+
+<section class="healthpackage">
+    <div class=" container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img  style="width: 100%;" width="600 " height="450" src="{{branches.image2.url}}" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <iframe src="{{branches.map}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

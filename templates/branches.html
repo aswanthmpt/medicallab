@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>Branches</h2>
+													<p>GMRL Labs: Affordable health check-ups, precision diagnostics, <br>
+and convenient branches for your well-being.</p>
+											</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner6.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<section class="healthpackage">
+    <div class=" container">
+        <div class=" row">
+           {% for i in branches %}
+            <div class="col-lg-4 col-md-4 col-sm-6">
+
+                <a href="{% url 'main:branchdetails' i.id %}" class="healthpack">
+                    <span>
+                        <div class="card healthcard">
+                            <div class="link ">
+                                
+                                <i class='bx bx-link'></i>
+                                <img src="{{i.image.url}}" alt="Pathology" />
+                            </div>
+                            <div class="card-body healthcardbody">
+                                <h6>{{i.name}}</h6>
+                                <i class='bx bx-chevron-right ms-auto'></i>
+                            </div>
+                        </div>
+    
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+        </section>
+{% endblock %}

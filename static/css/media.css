@@ -1,0 +1,408 @@
+@media (max-width: 575.98px) {
+    .navbartwo img{
+        /* height: 80%;  */
+    }
+    .navbartwo .col-lg-4{
+        /* width: 40%; */
+    }
+    .socialmedia li a{
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0px 6px;
+    }
+    /* firstbanner_________________________________ */
+    .textfield{
+        height: 80vh;
+        padding-top: 3%;
+    }
+    .textfieldone{
+        
+        text-align: center;
+    }
+    .textfieldone h2{
+        font-weight: 300;
+        font-size: 36px;
+        margin-top:  70px;
+    }
+    .textfieldone p{
+        font-family: "Roboto", sans-serif;
+        line-height: 18px;
+        margin-top: 2%;
+    }
+    .bannercol img{
+        height: 60vh;
+    }
+    /* newsfeed_______________________ */
+.newsfeed{
+  
+    position:unset;
+    text-align: center;
+    height: 15vh;
+    overflow: hidden;
+}
+    /* welcome_______________________________ */
+.welcome{
+    /* margin-top: 55%; */
+    margin-bottom: 5%;
+}
+.welcomecol h6{
+   text-align: center;
+    }
+    .welcomecol h2{
+   text-align: center;
+    }
+  
+    .learnmorediv{
+       
+        text-align: center;
+    }
+/* emergencycall___________________________ */
+
+
+.emergencycallrowone .col-lg-8{
+    
+    padding: 5% 15%;
+    text-align: center;
+
+}
+.emergencycallrowone .col-lg-4{
+    
+    padding: 8% 18%;
+    text-align: center;
+
+}
+.emergencycallrowtwo .col-lg-5 h2{
+    margin-top: 1px;
+    }
+/* homebuttons__________________________________________ */
+
+.homebuttons{
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+ 
+  justify-content: center;
+    display: block;
+}
+.homebuttons .row{
+    display: flex;
+    justify-content: center;
+}
+.homebuttons .row .col-lg-2{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    width: 60% !important;
+
+}
+.homebuttons .row .lastcol{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    width: 60% !important;
+
+}
+/* healthpackage__________________________________ */
+
+.healthcardbody h6{
+    font-size: 12px;
+}
+.home-page-heading{
+   text-align: center;
+}
+.healthcardbody i{
+    font-size: 14px;
+}
+.healthpackage .container .row .col-lg-3{
+    text-align: center;
+}
+/* testimonials_________________________________ */
+.cardtop p{
+    font-size: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+.cardtop{
+    width: 100%;
+    padding: 25px 25px 0px 25px;
+    margin: 0px;
+    min-height: 200px;
+}
+/* whyus__________________________________________ */
+.whyusfirstcol h2{
+   text-align: center;
+}
+/* footer_____________________________________ */
+.menu li{
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    float: left;
+    margin: 0%;
+}
+
+.containertwo .row .col-lg-3{margin-top: 10px;
+   text-align: center;
+}
+.footerbtm .container .row .col-lg-6{
+    text-align: center;
+}
+}
+
+/* _______________________________________________________ */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+   
+    .socialmedia li a{
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0px 6px;
+    }
+      /* firstbanner_________________________________ */
+      .textfield{
+        height: 80vh;
+        padding-top: 3%;
+    }
+    .textfieldone{
+        
+        text-align: center;
+    }
+    .textfieldone h2{
+        font-weight: 300;
+        font-size: 40px;
+        margin-top:  70px;
+    }
+    .textfieldone p{
+        line-height: 18px;
+        margin-top: 2%;
+    }
+    .bannercol img{
+        height: 60vh;
+    }
+        /* newsfeed_______________________ */
+.newsfeed{
+  
+    position:unset;
+ text-align: center;
+    height: 20vh;
+    overflow: hidden;
+}
+    /* welcome_______________________________ */
+    .welcome{
+        /* margin-top: 55%; */
+        margin-bottom: 5%;
+        width: 100%;
+        padding: 0%;
+    }
+    .welcomecont{
+        width: 100%;
+        padding: 0%;
+    }
+    .welcomecol h6{
+       text-align: center;
+        }
+        .welcomecol h2{
+       text-align: center;
+        }
+      
+        .learnmorediv{
+           
+            text-align: center;
+        }
+        /* homebutton______________________________ */
+        .firsticons .container{
+            max-width: 100% !important;
+        }
+        .homebuttons .row .col-lg-2 h6{
+            font-size: 13px;
+        }
+        /* emergencycall___________________________ */
+
+
+.emergencycallrowone .col-lg-8{
+    
+    padding: 5% 10%;
+    text-align: center;
+
+}
+.emergencycallrowone .col-lg-4{
+    
+    padding: 5% 23% ;
+    text-align: center;
+
+}
+.emergencycallrowtwo .col-lg-5 h2{
+margin-top: 1px;
+}
+/* healthpackage__________________________________ */
+
+.healthcardbody h6{
+    font-size: 12px;
+}
+.home-page-heading{
+   text-align: center;
+}
+.healthcardbody i{
+    font-size: 14px;
+}
+.healthpackage .container{
+    max-width: 100% !important;
+}
+.healthpackage .container .row .col-lg-3{
+    text-align: center;
+}
+/* testimonials_______________________ */
+.ourtestimonials .container{
+    max-width: 100% !important;
+}
+/* departmrnt____________________________ */
+.department .container{
+    max-width: 100% !important;
+
+}
+/* whyus__________________________________________ */
+.whyusfirstcol h2{
+    text-align: center;
+ }
+
+ /* footer_____________________________________ */
+.menu li{
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    float: left;
+    margin: 0%;
+}
+
+.containertwo .row .col-lg-3{margin-top: 10px;
+   text-align: center;
+}
+.footerbtm .container .row .col-lg-6{
+    text-align: center;
+}
+}
+
+
+/* ______________________________________________________________ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+     /* emergencycall___________________________ */
+
+
+.emergencycallrowone .col-lg-8{
+    
+    padding: 5% 20%;
+    text-align: center;
+
+}
+.emergencycallrowone .col-lg-4{
+    
+    padding: 5% 28% ;
+    text-align: center;
+
+}
+.emergencycallrowtwo .col-lg-5 h2{
+margin-top: 1px;
+}
+ /* homebutton______________________________ */
+ .firsticons .container{
+    max-width: 100% !important;
+}
+
+/* departmrnt____________________________ */
+.department .container{
+    max-width: 100% !important;
+
+}
+/* healthpackage__________________________________ */
+
+.healthcardbody h6{
+    font-size: 14px;
+}
+.home-page-heading{
+   text-align: center;
+}
+.healthcardbody i{
+    font-size: 19px;
+}
+.healthpackage .container{
+    max-width: 100% !important;
+}
+.healthpackage .container .row .col-lg-3{
+    text-align: center;
+}
+/* testimonials_______________________ */
+.ourtestimonials .container{
+    max-width: 100% !important;
+    
+}
+}
+/* ___________________________________________________________ */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/* navbar____________ */
+.navbartwo img{
+    width: 100%;
+    margin-left: 5px;
+}
+.navbartwo{
+    padding:10px 2px
+}
+.secondnavul{
+    max-width: 100%;
+    padding: 0%;
+    /* margin-left: 5px; */
+}
+.navtwocol .container{
+    padding: 0%;
+    max-width: 100%;
+}
+.secondnavul li{
+    padding: 0%;
+    margin: 0%;
+}
+.secondnavul li a{
+    font-size: 13px;
+  
+}
+    /* footer_________________ */
+    .footer-menu h4{
+        font-size: 20px;
+    }
+    .menu li{
+        font-size: 15px;
+    }
+}
+/* ______________________________________________________________ */
+@media (min-width: 1200px)and (max-width: 1536.98px) {
+    /* navbar____________ */
+.navbartwo img{
+    width: 100%;
+    margin-left: 5px;
+}
+.navbartwo{
+    padding:10px 2px
+}
+.secondnavul{
+    max-width: 100%;
+    padding: 0%;
+    /* margin-left: 5px; */
+}
+.navtwocol .container{
+    padding: 0%;
+    max-width: 100%;
+}
+.secondnavul li{
+    padding: 0%;
+    margin: 0%;
+}
+#navbarSupportedContent{
+    justify-content: end;
+}
+.secondnavul li a{
+    font-size: 15px;
+  
+}
+}
+/* _____________________________________________________________ */
+@media (min-width: 1537px) {}

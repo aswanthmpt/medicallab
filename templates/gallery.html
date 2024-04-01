@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>Gallery</h2>
+													<p>Step into the visual journey of GMRL Labs in Tripunithura—a gallery <br>
+showcasing our commitment to health and excellence.</p>
+											</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/executive-package.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<section class="gallery" >
+    <div class="container">
+        <div class="row">
+            {% for i in gallery %}
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="galleryimages">
+                    <img width="680" height="213" src="{{i.image.url}}" alt="">
+
+                </div>
+            </div>
+            {% endfor %}
+         
+           
+        </div>
+    </div>
+</section>
+{% endblock %}

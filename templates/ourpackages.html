@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2> Our Packages</h2>
+								
+											</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner-01.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+<section class="packagedetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>{{ourpackages.name}}</h2>
+                <ul>
+                    {% for test in tests_list %}
+                    <li>{{ test }}</li>
+                {% endfor %}
+                    </ul>
+                {% if ourpackages.note %}
+                <h6>NOTE: {{ourpackages.note}}</h6>
+                {% endif %}
+                {% if ourpackages.homecollection %}
+                <h6 class="mt-3">HOME COLLECTION AVAILABLE</h6>
+                    <P>
+                        
+                        {{ourpackages.homecollection}}
+                    </P>
+                {% endif %}
+
+            </div>
+            <div class="col-lg-4 ">
+                <div class="packagedetailsright">
+                    <div class="packagerate">
+                        <h5 class="">From: <i class="fa fa-rupee-sign"></i> {{ourpackages.price}}</h5>
+                    </div>
+                    <img  src="{{ourpackages.image.url}}" alt="Pathology" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="healthpackage">
+    <div class="container" style="text-align: center;">
+        <div class="otherpackages">
+            
+                <h2 class="home-page-heading">Other Packages</h2>
+                    <p>Explore a curated selection of premium packages designed to elevate your experience and meet your unique needs.
+
+                    </p>
+         
+          
+        </div>
+
+        <div class="healthscroll row">
+            {% for i in package %}
+            <div class="col-lg-4 col-md-4 col-sm-6">
+
+                <a href="{% url 'main:ourpackages' i.id %}" class="healthpack">
+                    <span>
+                        <div class="card healthcard">
+                            <div class="link ">
+                                <h5><font>From: <i class="fas fa-rupee-sign"></i> {{i.price}}</font></h5>
+                                <i class='bx bx-link'></i>
+                                <img src="{{i.image.url}}" alt="Pathology" />
+                            </div>
+                            <div class="card-body healthcardbody">
+                                <h6>{{i.name}}</h6>
+                                <i class='bx bx-chevron-right ms-auto'></i>
+                            </div>
+                        </div>
+    
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+         
+        </div>
+    </div>
+</section>
+
+{% endblock %}

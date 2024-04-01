@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>Contact Us</h2>
+													<p>Connect with GMRL Labs for personalized health solutions – <br>
+your well-being is just a call away.</p>
+											</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner2.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Phone</h4>
+                    <h6>+91 81388 62626</h6>
+                    <h6>0484 0000 0000</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Email</h4>
+                    <h6> info@gmrllabs.com</h6>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bxs-map'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Address</h4>
+                    <h6>GMRL Laboratories Chambakkara, Ernakulam, Ernakulam - 682011/h6>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class=" contactcard">
+        
+            <div class="card-body cntcardbody">
+                <div class="call">
+                    <i class='bx bx-time-five'></i>
+                </div>
+                <div class="contactdetails ">
+                     <h4>Opening Hours</h4>
+                    <h6>Mon - Sat : 6:30pm to 6:00pm <br>
+                    Sun : 6:30am - 12:30pm</h6>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+</div>
+
+<section class="message">
+    <div class="container">
+        <div class="row sndmessage">
+            <div class="col-lg-5 ">
+                <img  src="{% static '/images/package4.jpg' %}">	
+
+            </div>
+            <div class="col-lg-7">
+                <h4>Send us a message</h4>
+                <p>Connect with us and share your thoughts – your message matters to us.</p>
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="row">
+                    <div class="mb-3 col-lg-6">
+                        <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                    </div>
+                   
+                    <div class="mb-3 col-lg-6">
+                         <input name="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <input name="phone" type="number" class="form-control" id="formGroupExampleInput2" placeholder="Phone  ">
+                   </div>
+                    <div class="mb-3 col-lg-6">
+                        <input name="subject" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Subject">
+                    </div>
+                    <div class="mb-3 col-lg-12">
+                         <input name="message" type="text" class="form-control frmmessage" id="formGroupExampleInput2" placeholder="Message">
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn submitbtn" type="submit">Submit form</button>
+                    </div>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <div class="container">
+       <div class="googlemap">
+
+           <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=gmrl chambakkara&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+       </div>
+             
+       
+           
+      
+    </div>
+</section>
+{% endblock %}

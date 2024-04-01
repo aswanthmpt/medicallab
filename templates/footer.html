@@ -1,0 +1,135 @@
+{% load static %}
+<section>
+<div class="container-fluid footer">
+    <div class="container containerone">
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <span>
+                    <div class="row" style="text-align: center;">
+                        <div  class="col-lg-2 col-md-2">
+                            <img src="{% static '/images/make-appointment.png' %}" alt="">
+                        </div>
+                        <div style="float: left;" class="col-lg-7 col-md-7">
+
+                            <h4>Make Appointment</h4>
+                            <p>Call +91 81388 62626 or click Book Now to secure your appointment</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <a class="booknow" href="">Book Now</a>
+
+                        </div>
+                    </div>
+                </span>
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+                <div class="d-flex mt-4 " style="justify-content: center;">
+                    <div class="mt-2 ">
+                        <img style="" src="{% static '/images/openinh-hours-logo.png' %}" alt="">
+
+                    </div>
+                    <div style="" class=" openinghour">
+                        <h4  >Opening hours</h4>
+                        <p>Mon - Sat : 6:30pm to 6:00pm</p>
+                        <p>Sun : 6:30am - 12:30pm</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container containertwo ">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 ">
+                <span class="footer-logo">
+                    <img style="width: 70%;" src="{% static '/images/gmrl-footer-logo.svg' %}" alt="GMRL Logo">
+                </span>
+            </div>
+
+            <div class="col-lg-2   d-md-none d-lg-block  d-none  footer-menu">
+                <h4>Quick Links</h4>
+                <div class="menu-footer-container">
+                    <ul id="menu-footer" class="menu">
+                        <li><a href="{% url 'main:home' %}">Home</a></li>
+                        <li id=""><a href="{% url 'main:about' %}">About Us</a></li>
+                        <li><a href="{% url 'main:packages' %}">Packages</a></li>
+                        <li><a href="{% url 'main:tests' %}">Tests</a></li>
+                        <li><a href="{% url 'main:gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'main:blog' %}">Blog</a></li>
+                        <li><a href="{% url 'main:testimonials' %}">Testimonials</a></li>
+                        <li><a href="{% url 'main:branches' %}">Branches</a></li>
+                        <li><a href="{% url 'main:contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'main:privacy' %}">Privacy Policy</a></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2  d-md-none d-lg-block  d-none  footer-menu">
+                <h4>Departments</h4>
+                <div class="menu-footer-container">
+                    <ul id="menu-footer" class="menu">
+                        <li><a href="{% url 'main:departments' %}">Pathology</a></li>
+                        <li id=""><a href="{% url 'main:departments' %}">Biochemistry</a></li>
+                        <li><a href="{% url 'main:departments' %}">Microbiology</a></li>
+                        <li><a href="{% url 'main:departments' %}">Serology</a></li>
+                        <li><a href="{% url 'main:departments' %}">Immunology</a></li>
+                        <li><a href="{% url 'main:departments' %}">Radiology</a></li>
+                        <li><a href="{% url 'main:departments' %}">Molecularbiology</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 d-lg-block  d-md-block  d-none  footer-menu">
+                <h4>Our Packages</h4>
+                <div class="menu-footer-container">
+                    <ul id="menu-footer" class="menu ">
+                        {% for i in package %}
+                        <li class=""><a href="{% url 'main:ourpackages' i.id %}">{{i.name}}</a></li>
+                        {% endfor %}
+                      
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 footer-menu  ">
+				<h4>Get In Touch</h4>
+				<p>GMRL Laboratories
+				Chambakkara, Ernakulam, 
+				Ernakulam - 682011</p>
+				<p>+91 81388 62626</p>
+				<p>0484 0000 0000</p>
+				<p>info@gmrllabs.com</p>
+
+				<ul class="footersocialmedia ">
+                    <li style="background-color: #22419c;"><a href=""><i class='bx bxl-facebook fb '></i></a></li>
+                    <li style="background-color: #1c9be9;"><a href=""><i class='bx bxl-twitter' ></i></a></li>
+                    <li style="background-color: #0e72a3;"><a href=""><i class='bx bxl-linkedin' ></i></a></li>
+                    <li style="background-color: #cf2e2e;"><a href=""><i class='bx bxl-instagram' ></i></a></li>
+				</ul>
+			</div>
+
+
+        </div>
+    </div>
+</div>
+</section>
+<section class="footerbtm">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>© 2024 GMRL Labs. All Right Reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 webstudio ">
+                <p>Crafted by <a href="" target="_blank">Ooly Web Studio</a></p>
+
+            </div>
+        </div>
+    </div>
+
+</section>

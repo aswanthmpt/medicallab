@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 col-md-12 col-sm-12 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                <span>
+                    <h2>About Us</h2>
+                                                <p>GMRL Labs: Tripunithura's hub for affordable Health Check Ups <br>
+    with cutting-edge analyzers, prioritizing your well-being.</p>
+                                        </span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <img  src="{% static '/images/banner1.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+
+<section class="aboutwelcome">
+    <div class="awelcome container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+    <p>Welcome to Best Laboratory in Kochi, your distinguished destination for comprehensive and affordable health <a href="https://www.gmrllabs.in/packages/">check-up packages</a> in Thrippunithura. Step into a realm of healthcare excellence marked by precision, affordability, and unwavering commitment to your well-being.</p>
+    
+    
+    
+    <p>At GMRL, our pride lies in our dedication to excellence. Our cutting-edge, fully automated analyzers undergo daily verification against Biorad USA Quality Controls, ensuring accurate and reliable diagnostic results. Your health is paramount, and we strive to provide trustworthy and precise information for your healthcare journey.</p>
+    
+    
+    
+    <p>Our dedicated professionals are ready to guide you through every step of your health assessment journey. With a mission to deliver the highest standard of care and convenience, we prioritize your well-being above all else. GMRL Laboratories is not just a healthcare provider; we are your trusted partner on the path to a healthier and happier life.</p>
+    
+    
+    
+    <p>Whether you seek routine health check-ups or specialized diagnostics, our facility is equipped with the latest technology to meet your diverse healthcare needs. Our commitment extends beyond diagnostics; we empower you with knowledge and support for proactive health management.</p>
+    
+    
+    
+    <p>Experience peace of mind entrusting your health to GMRL Laboratories. In our facility, precision meets affordability, and your well-being takes center stage. Your journey to optimal health begins here, the Best laboratory in Kochi. Choose GMRL Laboratories for a comprehensive, personalized, and empowering healthcare experience. Your health is our priority.</p>
+    </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 awelcol">
+                <img src="{% static '/images/welcome-image.jpg' %}" alt="">    
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

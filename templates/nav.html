@@ -1,0 +1,86 @@
+{% load static %}
+<section class="navbarhead">
+<div class="container-fluid navone">
+    <div class="navbarone mx-auto">
+    <div class="navrowone row ">
+        <div class="col-lg-6  col-md-6 col-6 navonecol">
+            <ul class="socialmedia my-auto" >
+                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href=""><i class='bx bxl-linkedin' ></i></a></li>
+                <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
+            </ul>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-6 navonecol ">
+        <a href="{% url 'main:makeappointment' %}" class="makeappointment">Make an Appointment</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<div class="container-fluid navtwo ">
+    <div class="navbartwo  mx-auto">
+        <div class="row  navrowtwo">
+            <div class="col-lg-4 col-md-6 col-9 ">
+                <a href="{% url 'main:home' %}"><img src="{% static '/images/gmrl-logo.svg' %}" alt=""></a>
+            </div>
+            <div class="navtwocol col-lg-8 col-md-6 col-3 ">
+                <div class="container   ">
+
+                    <nav class="navbar navbar-expand-lg justify-content-end ">
+                        <div class="container-fluid justify-content-end ">
+                       
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="secondnavul navbar-nav me-auto mb-2 mb-lg-0 ">
+                              <li class="nav-item ">
+                                <a class="nav-link " aria-current="page" href="{% url 'main:about' %}">ABOUT US</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:tests' %}">TESTS</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:packages' %}">PACKAGES</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:blog' %}">BLOG</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:gallery' %}">GALLERY</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:branches' %}">BRANCHES</a>
+                              </li>
+                              <li class="nav-item ms-2">
+                                <a class="nav-link " href="{% url 'main:contact' %}">CONTACT US</a>
+                              </li>
+                              
+                              
+                            </ul>
+                            
+                          </div>
+                        </div>
+                      </nav>
+                    <!-- <ul class=" navtwoul ">
+                        <li><a href="">ABOUT US</a> </li>
+                        <li><a href="">TESTS</a></li>
+                        <li><a href="">PACKAGES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">BRANCHES</a></li>
+                        <li><a href="">CONTACT US</a> </li>
+
+                    </ul> -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>

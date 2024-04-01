@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="aboutus container-fluid">
+
+    <div class="row aboutrow">
+        <div class="col-lg-6 ">
+            <div class="abouttext">
+                <div class="abouttextone  ">
+
+                    <span>
+						<h2>Make An Appointment</h2>
+													<p>Schedule your appointment today for personalized care and
+                                                        comprehensive health assessments.</p>
+											</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img  src="{% static '/images/banner3.jpg' %}" class="attachment-large size-large" alt="Best Lab In Ernakulam" decoding="async" fetchpriority="high">	
+    		</div>
+    </div>
+</div>
+<section class="homevisit" >
+    <div class="container ">
+        <div class="row  d-flex justify-content-center">
+
+       <div class="col-lg-6">
+
+        <div class="heading">
+            <h2>Book a Home Visit</h2>
+            <h6>Experience personalized care with our expert team—schedule your appointment for <br> comprehensive health assessments and proactive well-being.</h6>
+        </div>
+        <div class="homevisitform">
+            <form class="row g-3" method="post"  >
+              {% csrf_token %}
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Your Name</label>
+                    <input name="name" type="text" class="form-control" id="inputAddress" placeholder="">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input name="email" type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Phone</label>
+                  <input name="phone" type="number" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Date</label>
+                  <input name="date" type="date" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Time</label>
+                  <input name="time" type="time" class="form-control" id="inputPassword4">
+                </div>
+                
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Age</label>
+                  <input name="age" type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Gender</label>
+                  <select name="gender" id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="">
+                    <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                    <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            
+                <div class="col-12">
+                    <button class="btn submitbtn" type="submit">Submit </button>
+                </div>
+              </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

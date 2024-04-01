@@ -1,0 +1,426 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+<div class="home">
+    <div class="container-fluid  bannerone">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade banner-wrapper" data-bs-ride="carousel"
+            data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="row  bannerrow">
+                        <div class="col-lg-6 col-12  bannercol ">
+                            <div class="textfield ">
+                                <div class="textfieldone  ">
+
+                                    <h2>Unlocking Vital <br>
+                                        Insights: Your Blood, Your Lab</h2>
+                                    <p>Unlocking Vital Insights: Where Your Blood Holds the Key to Your <br>
+                                        Health – Welcome to Your Trusted Laboratory.</p>
+                                    <button class="learnmore-btn">Learnmore</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-lg-6 col-12  bg-primary bannercol">
+                            <img src="{% static '/images/banner-01.jpg' %}" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row  bannerrow">
+                        <div class="col-lg-6 col-12  bannercol ">
+                            <div class="textfield ">
+                                <div class="textfieldone">
+                                    <h2>Your Journey to <br>
+                                        Wellness: Precision Diagnostics, <br>
+                                        Compassionate Care.</h2>
+                                    <p>Experience excellence in healthcare at our state-of-the-art lab, <br>
+                                        where precision meets compassion for your well-being.</p>
+                                    <button class="learnmore-btn">Learnmore</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-12  bg-primary bannercol">
+                            <img src="{% static '/images/banner-02.jpg' %}" alt="">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="newsfeed container-fluid">
+            <div class="news container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 ">
+                        <h3> <i class="fa fa-bullhorn"></i>  News & Event</h3>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12  ">
+                        <marquee class="marquee" behavior="" direction="left">Stay Updated with GMRL: Exciting News
+                            and Events Await! Explore the latest in health breakthroughs, special promotions,
+                            and community engagements right here. Check back often for updates that keep you informed
+                            and inspired.</marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+</div>
+
+<section class="welcome">
+    <div class=" welcomecont">
+        <div class="row welcomerow ">
+            <div class="col-lg-5 welcomecol ">
+                <img src="{% static '/images/welcome-image.jpg' %}" alt="">
+
+            </div>
+            <div class="col-lg-7 welcomecol ">
+                <h6>Welcome to GMRL Labs</h6>
+                <h2>Elevating Health Through
+                    Precision Diagnostics: GMRL Laboratories</h2>
+                <p> <strong>Welcome To GMRL Laboratories</strong></p>
+                <p>Best Laboratory in Ernakulam, a beacon of healthcare excellence situated in the heart of
+                    Thrippunithura. Our commitment is to bring you comprehensive and affordable Health Check-Up
+                    Packages, ensuring your well-being is our top priority.</p>
+                <p><strong>Cutting-edge Technology for Accurate Results</strong></p>
+                <p>At GMRL Laboratories, our state-of-the-art facility is equipped with fully automated analyzers,
+                    demonstrating our dedication to excellence. Additionally, these analyzers undergo daily
+                    verification against Biorad USA Quality Controls,
+                    assuring you not only accuracy but also reliability
+                    in every diagnostic result. Moreover, we understand the significance of your health, and our
+                    stringent quality assurance practices reflect our commitment to providing the best possible care.
+                </p>
+                <p><strong>Guiding You Through Your Health Journey</strong></p>
+                <p>Our team of dedicated professionals is here to guide you through every step of your health assessment
+                    journey. With a mission to provide the highest standard of care and convenience, we ensure that your
+                    experience at GMRL Laboratories is both seamless and empowering. Your health is not just a diagnosis
+                    to us; it’s a journey, and we’re honored to be your trusted partner on the path to a healthier,
+                    happier life.</p>
+                <p><strong>The Human Touch in Healthcare</strong></p>
+                <p>What sets us apart is not just our advanced technology but the human touch we bring to healthcare. We
+                    believe in creating a supportive environment where you feel informed and cared for. Furthermore,
+                    from precise testing to comprehensive health assessments, we strive to make your experience with
+                    GMRL Laboratories both enriching and reassuring.</p>
+                <p><strong>Looking Ahead with Innovation</strong></p>
+                <p>As we look ahead, our commitment to innovation and excellence remains unwavering. We understand that
+                    a proactive approach to healthcare is essential. Therefore, we are here to empower you with the
+                    knowledge and insights needed to make informed decisions about your well-being.</p>
+                <p><strong>Choose GMRL Laboratories for Optimal Health</strong> </p>
+                <p>Best laboratory in Ernakulam for a healthcare experience that goes beyond expectations – where
+                    cutting-edge technology meets compassionate care. Your journey to optimal health begins with us, and
+                    we’re excited to be a part of it. Trust GMRL Laboratories, where your health is our passion, and
+                    your well-being is our commitment.</p>
+                    <div class="learnmorediv">
+
+                        <a href="" class="learnmore">Learnmore</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="firsticons">
+    <div class="container mx-auto">
+        <div class="homebuttons">
+            <div class="row">
+                <div class=" col-lg-2 col-md-2 col-sm-6 ">
+                    <a href="{% url 'main:makeappointment' %}">
+                        <div class="homeicons">
+
+                            <img src="{% static '/images/calendar.png' %}" alt="">
+                        </div>
+                        <h6>Book An Appointment </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <a href="{% url 'main:contact' %}">
+                        <div class="homeicons">
+                            
+                            <img src="{% static '/images/location.png' %}" alt="">
+                        </div>
+                        <h6>Reach us</h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <a href="{% url 'main:packages' %}">
+                        <div class="homeicons">
+                            
+                            <img src="{% static '/images/box.png' %}" alt="">
+                        </div>
+                        <h6>Health Package</h6>
+                    </a></div>
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <a href="{% url 'main:packages' %}">
+                        <div class="homeicons">
+                            
+                            <img class="base-image" src="{% static '/images/microscope.png' %}" alt="">
+                            <!-- <img  class="hover-image" src="{% static '/images/001-microscope.png' %}" alt=""> -->
+                        </div>
+                        <h6>Available test</h6>
+                    </a></div>
+                <div class="col-lg-2 col-md-2 col-sm-12 lastcol">
+                    <a href="">
+                        <div class="homeicons">
+                            
+                            <img src="{% static '/images/hand.png' %}" alt="">
+                        </div>
+                        <h6>Home visit</h6>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="department">
+    <div class="container">
+        <h2>Diverse Departments <br>
+            for Comprehensive Health Services</h2>
+
+
+        <div class="scroll">
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/department-icon.png' %}" alt="Pathology" />
+                    </div>
+                    <h6>Pathology</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/bio-chemistry.png' %}" alt="Biochemistry" />
+                    </div>
+                    <h6>Biochemistry</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/microbiology.png' %}" alt="Microbiology" />
+                    </div>
+                    <h6>Microbiology</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/Serology.png' %}" alt="Serology" />
+                    </div>
+                    <h6>Serology</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/Immunology.png' %}" alt="Immunology" />
+                    </div>
+                    <h6>Immunology</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/radiology.png' %}" alt="radiology" />
+                    </div>
+                    <h6>Radiology</h6>
+                </span>
+            </a>
+            <a href="" class="department-item_main3">
+                <span>
+                    <div class="items">
+                        <img src="{% static '/images/molecular-biology.png' %}" alt="molecular-biology" />
+                    </div>
+                    <h6>Molecular Biology</h6>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="emergencycall">
+    <div class="container">
+        <div class="row emergencycallrowone">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="row emergencycallrowtwo">
+                    <div class="col-lg-7">
+
+                        <span>
+                            <i class='bx bxs-phone'></i>
+                            <div>
+
+                                <h4>Emergency Call: </h4>
+                                <p>Immediate Assistance Available - Dial Now!</p>
+                            </div>
+                        </span>
+
+
+                    </div>
+                    <div class="col-lg-5">
+                        <h2><a href="">+91 81388 62626</a></h2>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <a href="">
+                <div class="d-flex ms-3">
+                    <div class="downloadicon">
+                         <i class="fa fa-download"></i>
+                    </div>
+                    <div class="download">
+                        <h6>Download</h6>
+                        <h4>BROCHURE</h4>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="healthpackage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2 class="home-page-heading">GMRL Laboratories: <br>
+                    Unveiling Our Range of Health Packages</h2>
+            </div>
+            <div class="col-lg-3"><a href="" class="learnmore-btn">View More</a></div>
+        </div>
+
+        <div class="healthscroll row">
+            {% for i in package %}
+            <div class="col-lg-4 col-md-4 col-sm-6">
+
+                <a href="{% url 'main:ourpackages' i.id %}" class="healthpack">
+                    <span>
+                        <div class="card healthcard">
+                            <div class="link ">
+                                <h5><font>From: <i class="fas fa-rupee-sign"></i> {{i.price}}</font></h5>
+                                <i class='bx bx-link'></i>
+                                <img src="{{i.image.url}}" alt="Pathology" />
+                            </div>
+                            <div class="card-body healthcardbody">
+                                <h6>{{i.name}}</h6>
+                                <i class='bx bx-chevron-right ms-auto'></i>
+                            </div>
+                        </div>
+    
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+          
+            
+        </div>
+    </div>
+</section>
+
+
+<section class="ourtestimonials">
+    <div class="container">
+        <h2>Our Testimonials</h2>
+        <div class="testscroll row">
+
+            {% for i in testimonials %}
+            <div class="col-lg-4 col-md-6 col-sm-6">
+
+                <a href="" class="testimonial">
+                    <span>
+                        <div class="card testimonialcard">
+                            <div class="cardtop">
+                                <p>{{i.review}}</p>
+                            </div>
+                            <div class="card-body cardbottom">
+                                <div class="acountimg">
+                                    <img src="{% static '/images/user.png' %}" alt="">
+                                </div>
+                                <div class="acountname ">
+                                     <h5>{{i.name}}</h5>
+                                    <h6>{{i.place}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+            
+
+           
+      
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="whyus">
+    <div class="container">
+        <div class="row">
+            <div class=" whyusfirstcol col-lg-8">
+                <h2>Embrace Excellence:<br>
+                    Why GMRL Laboratories Stands Out</h2>
+                <p>At GMRL Laboratories, we stand out as a beacon of excellence, offering top-notch diagnostic services
+                    and a commitment to your well-being.</p>
+                <ul class="whyusul ">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Cutting-edge, precision diagnostic technology
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> A highly skilled, dedicated team of healthcare
+                        professionals</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Stringent quality control protocols to ensure
+                        result accuracy</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> An extensive selection of comprehensive Health
+                        Check Up Packages</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Competitive and accessible pricing to promote
+                        your health</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Convenient, patient-centric services for your
+                        well-being</li>
+                </ul>
+                <div class="learnmorediv">
+                <a href="" class="learnmore-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 whyussecondcol">
+                <div class="enquery">
+                    <h3>Enquiry</h3>
+                    <p>For any inquiries, please feel free to <br>reach out to us.</p>
+                   <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                         <input name="phone" type="number" class="form-control" id="formGroupExampleInput2" placeholder="Phone  ">
+                    </div>
+                    <div class="mb-3">
+                        <input name="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="mb-3 lg">
+                         <input name="message" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Message">
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn submitbtn" type="submit">Submit form</button>
+                    </div>
+                   </form>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+{% endblock %}
