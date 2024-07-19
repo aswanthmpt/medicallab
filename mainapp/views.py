@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.contrib import messages
 from . models import Packages,Gallery,Testimonials,Enquiry,Contact,Appointment,Blogs,Branches
 
 # Create your views here.
@@ -11,6 +12,7 @@ def home(req):
         
         enquiry = Enquiry.objects.create(name=name, email=email, message=message,phone=phone)
         enquiry.save()
+        messages.info(req,'Enquiry Submitted')
         return redirect('main:home')
   
     return render(req,'index.html')
@@ -63,6 +65,7 @@ def contact(req):
         
         contact = Contact.objects.create(name=name, email=email, message=message,subject=subject)
         contact.save()
+        messages.info(req,'Contact Requested')
         return redirect('main:contact')
     
     return render(req,'contact.html')
@@ -81,6 +84,7 @@ def makeappointment(req):
         
         appointment = Appointment.objects.create(name=name,address=address, email=email,gender=gender, message=message,phone=phone,date=date,time=time,age=age,)
         appointment.save()
+        messages.info(req,'Appointment Request Submitted')
         return redirect('main:makeappointment')
     
     return render(req,'makeappointment.html')

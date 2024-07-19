@@ -122,6 +122,9 @@ your well-being is just a call away.</p>
                          <input name="message" type="text" class="form-control frmmessage" id="formGroupExampleInput2" placeholder="Message">
                     </div>
                     <div class="mb-3">
+                        {% for i in messages %}
+                        <h5 class="mx-auto" style="color: #85ba32;">{{i}}</h5>
+                        {% endfor %}
                         <button class="btn submitbtn" type="submit">Submit form</button>
                     </div>
                 </div>

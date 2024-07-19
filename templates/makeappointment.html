@@ -79,6 +79,9 @@
                   </div>
             
                 <div class="col-12">
+                  {% for i in messages %}
+                  <h5 style="color: #85ba32;">{{i}}</h5>
+                  {% endfor %}
                     <button class="btn submitbtn" type="submit">Submit </button>
                 </div>
               </form>

@@ -1,0 +1,311 @@
+
+.aboutus{
+    width: 100%;
+    /* height: 65vh; */
+}
+.aboutus .row .col-lg-6 img{
+    object-fit: cover;
+    height: 65vh;
+    width: 100%;
+}
+.aboutrow .col-lg-6{
+    background: linear-gradient(0deg, rgba(229, 238, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 0%;
+  
+    margin: 0%;
+}
+.abouttext{
+    width: 100%;
+ text-align: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   padding: 0%;
+   margin: 0%;
+}
+.abouttextone{
+    text-align: left;   
+    margin-top: 20%;
+}
+.abouttextone h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+}
+.abouttextone p{
+    font-family: "Roboto", sans-serif;
+    line-height: 28px;
+    margin-top: 2%;
+}
+.aboutwelcome{
+    /* margin-top: 2px; */
+}
+.awelcome{
+    /* padding: 8%; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.awelcome .row .col-lg-7{
+    /* padding: 3%; */
+    text-align: justify;
+}
+.awelcome .row .col-lg-5{
+    padding-left: 3%;
+}
+.awelcome img{
+    width: 80%;
+}
+.awelcome p{
+    font-size: 16px;
+    line-height: 28px;
+   
+    font-family: 'Roboto', sans-serif !important;
+}
+/* contactus_____________________________ */
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contactcard:hover .call{
+    background-color: #85ba32;
+}
+.contactcard:hover .cntcardbody{
+
+    border-bottom: 2px solid #85ba32;
+}
+.cntcardbody{
+    
+    width: 100%;
+    text-align: center;
+    padding: 25px 10px;
+    min-height: 250px;
+    border: 1px solid #e4e8f3;
+    border-bottom: 2px solid #22419c;
+    transition-duration: 0.3s;
+}
+.call{
+    width: 80px;
+    height: 80px;
+    background: #22419c;
+    display: inline-block;
+    line-height: 85px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition-duration: 0.3s;
+}
+.call i{
+    color: #fff;
+    font-size: 24px;
+}
+.contactdetails h6{
+    font-size: 15px;
+    line-height: 24px;
+}
+.contactdetails h4{
+    font-size: 18px;
+ 
+}
+.message{
+    
+    width: 100%;
+    background: #e4e8f3;
+    margin-top: 80px;
+    padding: 70px 0px;
+}
+.sndmessage img{
+width: 100%;
+object-fit: cover;
+}
+.frmmessage{
+    height: 120px;
+    text-align: left;
+    vertical-align: top;
+}
+.map{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.gmap_iframe{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.googlemap{
+    position: relative;
+    padding-bottom: 360px;
+    height: 0;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+}
+/* ourpackages_____________________ */
+.packagedetails{
+    margin-top: 100px;
+}
+.packagedetailsright img{
+    width: 100%;
+}
+.packagedetails .container .row .col-lg-8 h2{
+    font-size: 24px;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+}
+.packagedetails .container .row .col-lg-8 ul{
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 20px 0px;
+}
+.packagerate{
+    background:#22419c;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px 0px;
+    margin: 0px 0px 20px 0px;
+}
+/* gallery___________________________________ */
+.galleryimages img{
+    width: 100%;
+   
+    transition-duration: .5s;
+}
+.galleryimages{
+    margin-top: 20px;
+    background-color: #22419c;
+    /* opacity: 0; */
+}
+.galleryimages:hover{
+    opacity: 100%;
+}
+.galleryimages:hover img{
+    opacity: 10%;
+}
+.gallery{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* homevisit____________________________ */
+.homevisit{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+}
+/* test_____________________________ */
+.tests{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.testlist h4{
+    background-color: #85ba32;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0px 5px 10px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 4px;
+ 
+    font-size: 18px;
+    display: block;
+}
+.testlist h6{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    margin: 0;
+    border-radius: 4px;
+    color:#22419c;
+    font-size: 18px;
+    display: block;
+}
+.testlist ul{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+    display: block;
+}
+.testlist li{
+  
+    padding: 4px 10px;
+    margin: 0;
+    list-style: none;
+    font-size: 15px;
+
+}
+
+.testlist ul li:nth-child(even) {
+    background: #e4e8f3;
+}
+/* departments________________________________ */
+.departments{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.departments .col-lg-8{
+    
+    display: table;
+    text-align: justify;
+}
+.departments span{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.departments .container .row:nth-child(even) .col-lg-8{
+    background: #e4e8f3;
+   
+}
+.departments .container .row .col-lg-8 span{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.departments .container .row .col-lg-4{
+    padding: 0%;
+}
+.departments .col-lg-8 h4{
+    width: 100%;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+    font-size: 24px;
+    color: #333333;
+}
+.departments .container .col-lg-4 img{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+/* blogdetails___________________ */
+.blog-sidebar img{
+    width: 100%;
+}
+.blog-sidebar li{
+    list-style: none;
+    padding: 0px 0px 0px 25px;
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    display: block;
+}
+.blog-sidebar i{
+    color:#22419c;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+.blog-sidebar ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.blog-sidebar h4{
+    width: 100%;
+    padding: 0;
+    margin: 45px 0px 14px 0px;
+    color: var(--headingColor);
+    font-size: 24px
+}
